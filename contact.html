@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../Gym/fotos/icono.png">
+    <link rel="shortcut icon" href="fotos/icono.png">
     <title>Powerlifting - CAC 4.0</title>
 </head>
 <body>
@@ -30,21 +30,36 @@
     </section>
     <section class="main-contact">
         <div class="box">
-            <h2>Pedro Aranda<br><br>Curso CAC</h2>
+            <h2>Pedro J. Aranda<br><br>Curso CAC</h2>
         </div>
 
     </section>
     <section class="footer-contact">
         <div class="comment-box">
             <h3>Dejános tu comentario</h3>
-            <form class="comment-form">
-                <input type="text" placeholder="Tu Nombre">
+            <form class="comment-form" id="form">
+                <input name="name" type="text" placeholder="Tu Nombre" required type="text">
                 <input type="email" placeholder="Enter Mail">
                 <textarea rows="5" placeholder="Tu comentario">
                 </textarea>
                 <button type="submit" class="about-btn">Dejar comentario</button>
             </form>
-        </div>
     </section>
+<!--JavaScript sectión-->
+<script>
+    
+    var nav_links = document.getElementById("nav_links");
+    function showmenu(){
+        nav_links.style.right = "0";
+    }
+    function hidemenu(){
+        nav_links.style.right = "-300px";
+    }
+
+    const $form = document.querySelector('#form')
+    
+    $form.addEventListener('submit', handleSubmit)
+
+</script>
 </body>
 </html>

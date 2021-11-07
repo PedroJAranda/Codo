@@ -223,6 +223,7 @@ nav .fa{
     .row{
         flex-direction: column;
     }
+    
 }
 /*Exercises*/
 
@@ -341,4 +342,51 @@ nav .fa{
     font-size: 3em;
     z-index: 10;
     text-align: center;
+}
+
+@media(max-width:800px){
+    .main-contact{
+        background: white;
+    }
+
+    .box{
+        background: yellow;
+    }
+
+    .box::after{
+        background: white;
+    }
+
+    .box::before{
+        background: linear-gradient(#89abd9, red);
+        animation: animate 2.5s linear infinite;
+    }
+
+    .box h2{
+        color: black;
+    }
+}
+
+
+@media(max-width:600px){
+    .main-contact{
+        background:yellow;
+    }
+
+    .box{
+        background: white;
+    }
+
+    .box::after{
+        background: yellow;
+    }
+
+    .box::before{
+        background: linear-gradient(black, red);
+        animation: animate 1s linear infinite;
+    }
+
+    .box h2{
+        color: #89abd9;
+    }
 }
